@@ -1,0 +1,11 @@
+<div class="row">
+	<h1 class="page-header centered"><a href="#/notes" class="small pull-left push-right">< Your Notes</a>Edit Note</h1>
+	<div class="col-md-12">
+  		<input class="note-title center-block form-control" maxlength="45" type="text" ng-model="title" placeholder="Note Title">
+  		<br/>
+  		<textarea class="note-body center-block form-control" maxlength="1000" type="text" ng-model="body" class="note-body" placeholder="Start Typing Here..."></textarea>
+  		<br/>
+  		<button type="button" ng-click="saveNote(title,body)" class="btn center-block btn-lg">Save Note</button>
+  		<br/><br/>
+  	</div>
+</div>

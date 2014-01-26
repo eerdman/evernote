@@ -1,30 +1,89 @@
 /* app css stylesheet */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+.note-body {
+  cols: 50;
+  rows: 50;
 }
 
-.menu:before {
-  content: "[";
+.post-it {
+  width: 350px;
+  height: 350px;
+  background-color: #FFFF99;
+  float: left;
+  text-align: center;
 }
 
-.menu:after {
-  content: "]";
+.post-it:hover {
+  background-color: #FFCC66;
 }
 
-.menu > li {
-  display: inline;
+.new-note{
+  font-size: 75px;
+  color: #000;
+  display: block;
+  width: 350px;
+  height: 350px;
+  background-color: #FFFF99;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+.new-note:hover {
+  text-decoration: none;
+  color: #404040;
+  background-color: #FFCC66;
+
 }
 
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+.note-list{
+  font-size: 30px;
+  padding-left: 30px;
+}
+
+.note-count {
+  vertical-align: center;
+  line-height: 18px;
+}
+
+textarea.note-body {
+  background-color: #FFFF99;
+  width: 350px;
+  height: 350px;
+  font-size: 18px;
+}
+
+.note-title {
+  width: 350px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.push-right {
+  padding-right: 31%;
+}
+
+.date {
+  padding-left: 10px;
+}
+
+.note-title-label {
+  background-color: #2a6496;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.delete-button {
+  background-color: #B00000;
+  position: absolute;
+  padding: 3px 8px 3px 8px;
+  margin-top: 8px;
+  border-radius: 20px;
+  color: #FFF;
+}
+
+.delete-button:hover {
+  background-color: #E00000;
+  text-decoration: none;
+  color: #FFF;
 }

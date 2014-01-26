@@ -1,0 +1,19 @@
+<h1 class="page-header">Your Notes</h1>
+
+<div class="row">
+	<div class="col-md-5 col-md-offset-1">
+	  	<ul class="list-unstyled">
+	  		<li> <h4><span class="label label-default note-title-label"> Note Title </span> <span class="label label-default">Date Created </span></h4></li>
+    		<li ng-repeat="i in range(noteCount) | filter:checkNote">
+
+      			<a href="#" class="delete-button" ng-click="deleteNote(i.toString())">X</a> <a href="#/notes/{{i}}" class="note-list">{{getTitle(i)}}</a> <text class="date">{{getDate(i)}}</text>
+
+    		</li>
+  		</ul>
+  	</div>
+
+  	<div class="col-md-3 col-md-offset-1">
+  		<a class="new-note" href="#/notes/new">New Note</a>
+  	</div>
+
+</div>
